@@ -1,15 +1,15 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Inter } from "next/font/google"
+import Header from "../components/./header"
+import { ClerkProvider } from '@clerk/nextjs'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ['latin'] })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+export const Metadata = {
+  title: "core-drive drives",
+  description: "Find your dream car",
+};
+
 
 export const metadata = {
   title: "Create Next App",
@@ -18,12 +18,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${inter.className}`}
+        >
+          <Header />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <footer className="flex justify-center items-center bg-gray-950 py-1.5">
+            <div className="container flex flex-col mx-auto">
+              <p className="text-center text-white text-2xl font-semibold">created with love by peter</p>
+              <p className="text-center text-white text-3xl font-bold hover:text-gray-300">peterslap67@gmail.com</p>
+            </div>
+          </footer>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
