@@ -3,9 +3,9 @@
 import { Camera } from "lucide-react";
 import { Input } from "./ui/input";
 import { useCallback, useState } from "react";
-import { useDropzone } from "react-dropzone/.";
 import { toast } from "sonner";
 import { Button } from "./ui/button";
+import { useDropzone } from "react-dropzone";
 
 const HomeSearch = () => {
     const [searchTerm, setSearchTerm] = useState("")
