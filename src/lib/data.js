@@ -44,19 +44,21 @@ export const featuredCars = [
   ];
   
   export const carMakes = [
-    { id: 1, name: "Hyundai", image: "/make/hyundai.jpeg" },
-    { id: 2, name: "Honda", image: "/make/honda.jpeg" },
-    { id: 3, name: "BMW", image: "/make/bmw.jpeg" },
-    { id: 4, name: "Tata", image: "/make/tata.jpeg" },
-    { id: 5, name: "Mahindra", image: "/make/mahindra.jpeg" },
-    { id: 6, name: "Ford", image: "/make/ford.jpeg" },
+    { id: 1, name: "Hyundai", image: "/make/hyundai.png" },
+    { id: 2, name: "Honda", image: "/make/honda.png" },
+    { id: 3, name: "BMW", image: "/make/bmw.png" },
+    { id: 4, name: "Tata", image: "/make/tata.png" },
+    { id: 5, name: "Mahindra", image: "/make/mahindra.png" },
+    { id: 6, name: "Ford", image: "/make/ford.png" },
   ];
   
   export const bodyTypes = [
-    { id: 1, name: "SUV", image: "/body/suv.jpeg" },
-    { id: 2, name: "Sedan", image: "/body/sedan.jpeg" },
-    { id: 3, name: "Hatchback", image: "/body/hatchback.jpeg" },
-    { id: 4, name: "Convertible", image: "/body/convertible.jpeg" },
+    { id: 1, name: "SUV", image: "/body/suv.png" },
+    { id: 2, name: "Sedan", image: "/body/sedan.png" },
+    { id: 3, name: "Hatchback", image: "/body/hatchback.png" },
+    { id: 4, name: "Convertible", image: "/body/convertable.png" },
+    { id: 5, name: "Wagon", image: "/body/wagon.png"},
+    { id: 6, name: "crossover", image: "/body/crossover.png"}
   ];
   
   export const faqItems = [
